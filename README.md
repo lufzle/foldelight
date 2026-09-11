@@ -6,6 +6,10 @@ The visual idea is inspired by the folding-glass effect shown for iPhone Duo. Th
 
 This is an independent open-source interpretation. It does not reuse the reference implementation and is not affiliated with Apple.
 
+[lufzle.dev/foldelight](https://lufzle.dev/foldelight)
+
+![A MacBook opening from fully closed to 100 degrees and closing again](docs/foldelight-lid.gif)
+
 ## What it does
 
 - Reads the built-in MacBook lid-angle sensor.
