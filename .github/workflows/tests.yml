@@ -1,0 +1,35 @@
+name: Tests
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Swift and mutation tests
+    runs-on: macos-14
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Report toolchain
+        run: |
+          swift --version
+          xcodebuild -version
+
+      - name: Run release test suite
+        run: swift test -c release
+
+      - name: Test mutation runner
+        run: python3 -m unittest discover -s Tools -p 'test_mutation_runner.py'
+
+      - name: Validate mutation anchors
+        run: python3 Tools/mutation-test.py --validate-anchors

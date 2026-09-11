@@ -1,0 +1,93 @@
+First trace
+GPU_TRACE device=Apple M4 pixels=3024x1964 warmup=30 samples=180 rounds=3 source=initialized lanes=interleaved baseline=52bf1ef
+GPU_TRACE round=0 scenario=small-damage lane=baseline-full median=1.7819 p95=2.7996
+GPU_TRACE round=0 scenario=small-damage lane=current-full median=1.7072 p95=2.5267
+GPU_TRACE round=0 scenario=small-damage lane=current-partial median=0.8245 p95=1.7755
+GPU_TRACE round=0 scenario=window-damage lane=baseline-full median=1.7808 p95=2.4639
+GPU_TRACE round=0 scenario=window-damage lane=current-full median=1.7728 p95=2.5327
+GPU_TRACE round=0 scenario=window-damage lane=current-partial median=1.1427 p95=1.9936
+GPU_TRACE round=0 scenario=full-damage lane=baseline-full median=1.8098 p95=2.7053
+GPU_TRACE round=0 scenario=full-damage lane=current-full median=1.6063 p95=2.7817
+GPU_TRACE round=0 scenario=full-damage lane=current-partial median=1.8033 p95=2.7510
+GPU_TRACE round=1 scenario=small-damage lane=baseline-full median=1.7449 p95=2.5984
+GPU_TRACE round=1 scenario=small-damage lane=current-full median=1.7441 p95=2.6215
+GPU_TRACE round=1 scenario=small-damage lane=current-partial median=1.0370 p95=2.0545
+GPU_TRACE round=1 scenario=window-damage lane=baseline-full median=1.7144 p95=2.7377
+GPU_TRACE round=1 scenario=window-damage lane=current-full median=1.7392 p95=2.9416
+GPU_TRACE round=1 scenario=window-damage lane=current-partial median=0.9148 p95=2.1673
+GPU_TRACE round=1 scenario=full-damage lane=baseline-full median=1.7783 p95=2.8166
+GPU_TRACE round=1 scenario=full-damage lane=current-full median=1.7527 p95=2.7041
+GPU_TRACE round=1 scenario=full-damage lane=current-partial median=1.7285 p95=2.7668
+GPU_TRACE round=2 scenario=small-damage lane=baseline-full median=1.8250 p95=2.6800
+GPU_TRACE round=2 scenario=small-damage lane=current-full median=1.8041 p95=2.4807
+GPU_TRACE round=2 scenario=small-damage lane=current-partial median=0.8261 p95=1.6099
+GPU_TRACE round=2 scenario=window-damage lane=baseline-full median=1.7379 p95=2.4876
+GPU_TRACE round=2 scenario=window-damage lane=current-full median=1.7945 p95=2.5800
+GPU_TRACE round=2 scenario=window-damage lane=current-partial median=0.9895 p95=1.7641
+GPU_TRACE round=2 scenario=full-damage lane=baseline-full median=1.7553 p95=2.6413
+GPU_TRACE round=2 scenario=full-damage lane=current-full median=1.6621 p95=2.5958
+GPU_TRACE round=2 scenario=full-damage lane=current-partial median=1.7630 p95=2.7692
+GPU_FINAL_BARRIER round=0 enabled=1 median=1.7602 p95=2.5098
+GPU_FINAL_BARRIER round=0 enabled=0 median=1.8007 p95=2.8284
+GPU_FINAL_BARRIER round=1 enabled=1 median=1.7988 p95=2.6599
+GPU_FINAL_BARRIER round=1 enabled=0 median=1.7421 p95=2.5956
+GPU_FINAL_BARRIER round=2 enabled=1 median=1.7890 p95=2.6745
+GPU_FINAL_BARRIER round=2 enabled=0 median=1.7591 p95=2.9306
+GPU_CAPABILITIES device=Apple M4 threadExecutionWidth=32 maxThreads=1024
+GPU_COUNTER_SET timestamp: GPUTimestamp
+GPU_COUNTER_STAGE=true GPU_COUNTER_DISPATCH=false
+
+Relative-budget verification
+GPU_TRACE device=Apple M4 pixels=3024x1964 warmup=30 samples=180 rounds=3 source=initialized lanes=interleaved baseline=52bf1ef
+GPU_TRACE round=0 scenario=small-damage lane=baseline-full median=1.6866 p95=2.6284
+GPU_TRACE round=0 scenario=small-damage lane=current-full median=1.7459 p95=2.6416
+GPU_TRACE round=0 scenario=small-damage lane=current-partial median=0.8137 p95=1.5654
+GPU_TRACE round=0 scenario=window-damage lane=baseline-full median=1.6264 p95=2.7375
+GPU_TRACE round=0 scenario=window-damage lane=current-full median=1.6977 p95=2.7235
+GPU_TRACE round=0 scenario=window-damage lane=current-partial median=0.9894 p95=2.1183
+GPU_TRACE round=0 scenario=full-damage lane=baseline-full median=1.5224 p95=2.2878
+GPU_TRACE round=0 scenario=full-damage lane=current-full median=1.5965 p95=2.3270
+GPU_TRACE round=0 scenario=full-damage lane=current-partial median=1.4245 p95=2.5157
+GPU_TRACE round=1 scenario=small-damage lane=baseline-full median=1.6841 p95=2.4726
+GPU_TRACE round=1 scenario=small-damage lane=current-full median=1.6470 p95=2.5963
+GPU_TRACE round=1 scenario=small-damage lane=current-partial median=0.8069 p95=2.0419
+GPU_TRACE round=1 scenario=window-damage lane=baseline-full median=1.7365 p95=2.7566
+GPU_TRACE round=1 scenario=window-damage lane=current-full median=1.7273 p95=2.5879
+GPU_TRACE round=1 scenario=window-damage lane=current-partial median=1.2645 p95=1.8532
+GPU_TRACE round=1 scenario=full-damage lane=baseline-full median=1.7598 p95=2.6872
+GPU_TRACE round=1 scenario=full-damage lane=current-full median=1.8335 p95=2.8757
+GPU_TRACE round=1 scenario=full-damage lane=current-partial median=1.7875 p95=3.1391
+GPU_TRACE round=2 scenario=small-damage lane=baseline-full median=1.7212 p95=2.5868
+GPU_TRACE round=2 scenario=small-damage lane=current-full median=1.5680 p95=2.5627
+GPU_TRACE round=2 scenario=small-damage lane=current-partial median=0.9009 p95=1.8055
+GPU_TRACE round=2 scenario=window-damage lane=baseline-full median=1.7431 p95=2.6354
+GPU_TRACE round=2 scenario=window-damage lane=current-full median=1.7635 p95=2.5720
+GPU_TRACE round=2 scenario=window-damage lane=current-partial median=1.1931 p95=2.0427
+GPU_TRACE round=2 scenario=full-damage lane=baseline-full median=1.6570 p95=2.5722
+GPU_TRACE round=2 scenario=full-damage lane=current-full median=1.5803 p95=2.5506
+GPU_TRACE round=2 scenario=full-damage lane=current-partial median=1.7215 p95=2.4150
+GPU_FINAL_BARRIER round=0 enabled=1 median=1.8804 p95=2.6762
+GPU_FINAL_BARRIER round=0 enabled=0 median=1.6523 p95=2.2119
+GPU_FINAL_BARRIER round=1 enabled=1 median=1.2821 p95=2.5396
+GPU_FINAL_BARRIER round=1 enabled=0 median=1.6949 p95=2.5293
+GPU_FINAL_BARRIER round=2 enabled=1 median=1.2617 p95=2.2489
+GPU_FINAL_BARRIER round=2 enabled=0 median=1.8156 p95=2.6602
+GPU_CAPABILITIES device=Apple M4 threadExecutionWidth=32 maxThreads=1024
+GPU_COUNTER_SET timestamp: GPUTimestamp
+GPU_COUNTER_STAGE=true GPU_COUNTER_DISPATCH=false
+
+Corrected legacy/MPS and initialized threadgroups
+GPU_THREADGROUP 8x8 median=0.693 p95=1.706
+GPU_THREADGROUP 16x8 median=0.674 p95=1.211
+GPU_THREADGROUP 32x4 median=0.588 p95=1.763
+GPU_THREADGROUP 32x8 median=0.664 p95=1.530
+GPU_BENCH device=Apple M4 warmup=20 samples=60 GPU-only milliseconds
+GPU_BENCH legacy 1512x982 median=0.139 p95=0.971
+GPU_BENCH mps-fresh 1512x982 median=0.522 p95=1.290
+GPU_BENCH gaussian-fresh 1512x982 median=0.366 p95=1.203
+GPU_BENCH gaussian-reuse 1512x982 median=0.186 p95=0.896
+GPU_BENCH legacy 3024x1964 median=0.656 p95=1.420
+GPU_BENCH mps-fresh 3024x1964 median=2.262 p95=2.797
+GPU_BENCH gaussian-fresh 3024x1964 median=1.779 p95=2.672
+GPU_BENCH gaussian-reuse 3024x1964 median=0.765 p95=1.816
+GPU_BENCH gaussian-slight-fresh 3024x1964 median=1.177 p95=2.312
